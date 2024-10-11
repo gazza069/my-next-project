@@ -4,12 +4,12 @@
     "Fira Mono", "Droid Sans Mono", "Courier New", monoscope;
   --color-text-main: #333;
   --color-text-sub: #999;
-  --color-text-unpaited: #fff;
+  --color-text-unpainted: #fff;
   --color-text-error: #f33;
   --color-bg-main: #fff;
   --color-bg-sub: #f3f3f3;
   --color-bg-code: #fafafa;
-  --color-bg-paited: #333;
+  --color-bg-painted: #333;
   --color-border-dark: #333;
   --color-border: #ddd;
   --color-border-light: #f3f3f3;

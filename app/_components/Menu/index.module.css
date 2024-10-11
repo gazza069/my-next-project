@@ -1,4 +1,3 @@
-
 .items {
   display: flex;
   color: #fff;
@@ -36,5 +35,11 @@
     background: none;
     border: none;
     cursor: pointer;
+  }
+
+  .close {
+    position: absolute;
+    top: 24px;
+    right: 16px;
   }
 }
