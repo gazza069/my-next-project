@@ -51,6 +51,7 @@
   position: absolute;
   right: -40px;
   bottom: -40px;
+  color: #fff;
 }
 
 @media (max-width: 1000px) {
