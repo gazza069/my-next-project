@@ -1,10 +1,10 @@
 import styles from "./page.module.css";
 import Image from "next/image";
+
 import { getNewsList } from "@/app/_libs/microcms";
 import { TOP_NEWS_LIMIT } from  "@/app/_constants/index";
 import NewsList from "@/app/_components/NewsList";
 import ButtonLink from "@/app/_components/ButtonLink";
-import { revalidate } from "./news/[slug]/page";
 
 export const revalidate = 60;
 
