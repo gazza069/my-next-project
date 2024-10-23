@@ -16,7 +16,7 @@ export type Category = {
   name: string;
 } & MicroCMSListContent;
 
-type News = {
+export type News = {
   title: string;
   description: string;
   content: string;
