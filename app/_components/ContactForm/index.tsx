@@ -1,5 +1,7 @@
 "use client";
 
+import { sendGAEvent } from "@next/third-parties/google";
+import { sendGTMEvent } from "@next/third-parties/google";
 import { createContactData } from "@/app/_actions/contact";
 import { useFormState } from "react-dom";
 import styles from "./index.module.css";
@@ -12,6 +14,11 @@ const initialState = {
 export default function ContactForm() {
   const [state, formAction] = useFormState(createContactData, initialState);
   console.log(state);
+
+  const handleSubmit = () => {
+    sendGTMEvent({ event: "contact", calue: "submit"});
+  }
+
   if (state.status === "success") {
     return (
       <p className={styles.success}>
@@ -59,7 +66,7 @@ export default function ContactForm() {
         {state.status === "error" && (
           <p className={styles.error}>{state.message}</p>
         )}
-        <input type="submit" value="送信する" className={styles.button} />
+        <input type="submit" value="送信する" className={styles.button} onSubmit={handleSubmit} />
       </div>
     </form>
   )
